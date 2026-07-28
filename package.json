@@ -1,0 +1,20 @@
+{
+  "name": "goldcoin-secure-crypto",
+  "version": "0.1.0",
+  "description": "Smart contract, formal verification, security-audit, and companion-app artifacts for the Gold-Backed Secure Cryptocurrency (GBCC) architecture.",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:amoy": "hardhat run scripts/deployAmoy.js --network amoy",
+    "gas:amoy": "hardhat run scripts/gasMeasurement.js --network amoy"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.9.6"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "solc": "0.8.20"
+  }
+}
